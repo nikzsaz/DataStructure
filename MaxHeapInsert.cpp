@@ -1,10 +1,11 @@
 #include <iostream>
 using namespace std;
 int arr[10001];
-void swap(int a,int b){
-    a=a^b;
-    b=a^b;
-    a=a^b;
+// here we need to swap not only the value but references also so swap with references.
+void swap(int *a,int *b){
+    *a=*a^*b;
+    *b=*a^*b;
+    *a=*a^*b;
 }
 void insert(int num,int index){
     int parent,temp;
@@ -14,7 +15,7 @@ void insert(int num,int index){
         arr[index]=num;
         parent=(index-1)/2;
         while(arr[index]>arr[parent] && parent>=0){
-            swap(arr[index],arr[parent]);
+            swap(&arr[index],&arr[parent]);
             index=parent;
             parent=(index-1)/2;
         }
