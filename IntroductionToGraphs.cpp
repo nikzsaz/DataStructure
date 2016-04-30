@@ -21,7 +21,7 @@ int main() {
        arr[j][n]=0;
    }
 
-	//to delete one node from the graph
+	//to delete index node from the graph, we are deleting the input index (0,1.....) 
     for(int i=index;i<n-1;i++){
         for(int j=0;j<n;j++){
             arr[i][j]=arr[i+1][j];
