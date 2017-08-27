@@ -2,7 +2,7 @@
 #include <cstring>
 #include <algorithm>
 using namespace std;
-
+/**Link to the question***/
 /**http://practice.geeksforgeeks.org/problems/coin-piles/0**/
 int main() {
    int t;
