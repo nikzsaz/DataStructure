@@ -3,6 +3,7 @@
 #include <algorithm>
 using namespace std;
 
+/**http://practice.geeksforgeeks.org/problems/coin-piles/0**/
 int main() {
    int t;
    cin>>t;
