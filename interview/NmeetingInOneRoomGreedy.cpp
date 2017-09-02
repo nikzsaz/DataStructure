@@ -13,6 +13,8 @@ int main() {
     while(t--){
         int n;
         cin>>n;
+	    // Pair is used to combine together two values
+	    //which may be different in type. Pair provides a way to store two heterogeneous objects as a single unit.
         pair<int,int> arr[n];
         pair<int,int> arr1[n];
         for(int i = 0 ; i < n ; i++){
